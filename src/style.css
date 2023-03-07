@@ -1,0 +1,32 @@
+* {box-sizing: content-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-img {
+    transform: translate(130%, -10%);
+    position: relative;
+} 
+
+.header-menu {
+    text-transform: uppercase;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1.5em;
+    margin: 0;
+    background: rgb(90, 92, 94);
+    transform: translate(0%, -330%);
+    position:relative;
+} 
+
+.header-buscador {
+    transform: translate(80%, -1405%);
+}
+
+#imgPrincipal {
+    transform: translate(0%, -65%);
+    margin: 0px;
+    width: 100%;
+    position:absolute;
+} 
