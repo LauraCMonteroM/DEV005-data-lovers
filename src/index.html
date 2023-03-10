@@ -3,12 +3,14 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header>
+    <img id="imgPrincipal" src="./img/fotoPrincipal.png" />
     <img class="header-img" src="./img/hearderharrypotter.png" alt="Harry Potter" />
     <nav>
       <a class="header-menu" id="books" href="#">LIBROS</a>
@@ -17,16 +19,14 @@
       <a class="header-menu" id="funfacts" href="#">DATOS CURIOSOS</a>
       <a class="header-menu" id="study-house" href="#">CASAS DE ESTUDIO</a>
     </nav>
-    <p class="header-buscador">
-      <input type="search" name="buscar" placeholder="buscar..." />
-      <input type="submit" value="Buscar" />
-    </p>
-    <img id="imgPrincipal" src="./img/fotoPrincipal.png" />
+    <input class="input-buscar" type="search" name="buscar" placeholder="buscar..." />
+    <button class="btn-buscar" value="Buscar">Buscar</button>
+    
   </header>
-  <button class="btn-filrar">Filtar</button>
-  <button class="btn-ordenar">Ordenar</button>
-  <h2>Personajes</h2>
   <section id="temp-characters">
+    <button class="btn-filtrar">Filtrar</button>
+  <button class="btn-ordenar">Ordenar</button>
+  <h2>PERSONAJES</h2>
   </section>
   </header>
   <div id="root"></div>
