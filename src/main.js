@@ -8,5 +8,5 @@ for (let i = 0; i < data.characters.length; i++) {
   container.appendChild(containerCharacter);
   containerCharacter.innerHTML ="<img src='./img/Ppersonaje.png' class='img-character'>" + data.characters[i].name;
   containerCharacter.className = "characterBox"
-  console.log(containerCharacter.outerHTML);
+  //console.log(containerCharacter.outerHTML);
 }
