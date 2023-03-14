@@ -1,9 +1,20 @@
-// estas funciones son de ejemplo
+function ordenarAlfabeticamente(param) {
+  const characters = [...param]
+  const personajesOrdenados = characters.sort((a, b) => {
+    a = a.name.toLowerCase();
+    b = b.name.toLowerCase();
+    if (a == b) {
+      return 0;
+    }
+    if (a < b) {
+      return -1;
+    }
+    return 1;
+  })
 
-export const example = () => {
-  return 'example';
-};
+  return personajesOrdenados;
+}
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+export {
+  ordenarAlfabeticamente,
+}

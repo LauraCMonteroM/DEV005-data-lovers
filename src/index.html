@@ -21,15 +21,28 @@
     </nav>
     <input class="input-buscar" type="search" name="buscar" placeholder="buscar..." />
     <button class="btn-buscar" value="Buscar">Buscar</button>
-    
+    <form action="#">
+      <label for="btn">FILTRAR</label>
+      <select class="btn-filtrar" id="btn">
+        <option class="btn-filtrar-element" value="Muggle">Muggle</option>
+        <option class="btn-filtrar-element" value="humanos">Humanos</option>
+        <option class="btn-filtrar-element" value="Personaje femenino">Personajes femeninos</option>
+        <option class="btn-filtrar-element" value="Personaje masculino">Personajes masculinos</option>
+      </select>
+      <select class="btn-ordenar">
+        <option value="ORDENAR">ORDENAR</option>
+        <option value="A-Z" id="A-Z">A-Z</option>
+        <option value="Z-A" id="Z-A">Z-A</option>
+      </select>
+    </form>
   </header>
-  <section id="temp-characters">
-    <button class="btn-filtrar">Filtrar</button>
-  <button class="btn-ordenar">Ordenar</button>
-  <h2>PERSONAJES</h2>
-  </section>
-  </header>
-  <div id="root"></div>
+
+  <main id="sectionMostrando">
+    <h2>PERSONAJES</h2>
+    <section id="temp-characters">
+    </section>
+    <div id="root"></div>
+  </main>
   <script src="main.js" type="module"></script>
 </body>
 

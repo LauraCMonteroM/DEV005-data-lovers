@@ -1,14 +1,7 @@
 * {
-<<<<<<< HEAD
-    box-sizing: content-box;
-    margin: 0px;
-    padding: 0px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-=======
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
->>>>>>> 4f07af7b6cd23728345a6d98edc9d03bc653d48a
 }
 nav {
   height: 60px;
@@ -26,129 +19,9 @@ h2 {
   margin-left: 34px;
 }
 
+
+
 .header-img {
-<<<<<<< HEAD
-    transform: translate(130%, -10%);
-    position: relative;
-}
-
-.header-menu {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    background: rgb(90, 92, 94);
-    width: 1920px;
-    margin: 0;
-}
-
-#imgPrincipal {
-    width: 100%;
-    margin-top: -18%;
-}
-
-
-.header-buscador {
-    position: initial;
-    /* margin-left: 110%;
-    margin-bottom: 50%; */
-    transform: translate(100%, -50%);
-    display: initial;
-}
-
-
-/*
-h2 {
-    text-align: center;
-    justify-content: center;
-    font-size: 60px;
-}
-
-
-
-
-
-
-.btn-filrar {
-    position: relative;
-    background-color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    font-size: 20px;
-    width: 100px;
-    margin-top: 30px;
-    margin-left: 1532px;
-}
-
-.btn-ordenar {
-    position: relative;
-    background-color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    font-size: 20px;
-    width: 140px;
-    margin-top: 30px;
-    margin-left: 30px;
-}
-*/
-.characterBox {
-    display: flex;
-    text-align: center;
-    width: 290px;
-    height: 390px;
-    color: black;
-    font-size: 25px;
-    background-color: #a4a4a4;
-    border-radius: 20px;
-    margin: 20px;
-    padding: 20px;
-    flex-direction: row;
-}
-
-#books {
-    font-size: 25px;
-    margin-left: 20px;
-}
-
-#spells {
-    margin-left: 55px;
-    font-size: 25px;
-}
-
-#potions {
-    margin-left: 55px;
-    font-size: 25px;
-}
-
-#study-house {
-    margin-left: 460px;
-    font-size: 25px;
-}
-
-#funfacts {
-    margin-left: 55px;
-    font-size: 25px;
-}
-
-
-#background-img {
-    position: absolute;
-}
-
-#temp-characters {
-    position: relative;
-    background-image: url(./img/fondo1.png);
-    font-size: 15px;
-}
-
-@media (max-width: 768px) {
-    .header-menu {
-        color: blue;
-    }
-}
-=======
   position: fixed;
   text-align: center;
   margin-top: -2px;
@@ -201,7 +74,7 @@ h2 {
   margin-left: 1467px;
   height: 30px;
   width: 161px;
-  border: white;
+  border: none;
   font-size: 17px;
   padding-left: 5px;
   border-radius: 10px;
@@ -235,7 +108,7 @@ h2 {
   background-color: #faba13;
 }
 
-.characterBox {
+.cards {
   height: 281px;
   width: 252px;
   background-color: #a4a4a4;
@@ -247,10 +120,15 @@ h2 {
   justify-content: center;
 font-size: 20px;
 }
-.characterBox:hover {
+.cards:hover {
   background-color: #faba13;
 }
 
+.btn-filtrar-element{
+  border: none;
+  background-color: white;
+
+}
 #imgPrincipal {
   margin-top: 56px;
   position: absolute;
@@ -293,4 +171,3 @@ font-size: 20px;
 
 @media screen {
 }
->>>>>>> 4f07af7b6cd23728345a6d98edc9d03bc653d48a
