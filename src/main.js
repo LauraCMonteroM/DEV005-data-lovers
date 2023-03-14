@@ -1,12 +1,53 @@
-import data from "./data/harrypotter/harry.js";
+import dataHarryPotter from "./data/harrypotter/harry.js";
+import { ordenarAlfabeticamente } from "./data.js";
 
+
+const dataCharacters = dataHarryPotter.characters;
+const dataBooks = dataHarryPotter.books;
 const container = document.getElementById("temp-characters");
-//console.log(container);
-for (let i = 0; i < data.characters.length; i++) {
-  const containerCharacter = document.createElement("div");
-  //console.log(i)
-  container.appendChild(containerCharacter);
-  containerCharacter.innerHTML ="<img src='./img/Ppersonaje.png' class='img-character'>" + data.characters[i].name;
-  containerCharacter.className = "characterBox"
-  //console.log(containerCharacter.outerHTML);
+
+//CARDS
+function template(dataCharacters) {
+let fragment = '';
+dataCharacters.forEach(element => {
+  fragment += `
+<div class="cards">
+<img src="./img/Ppersonaje.png">
+<p class="objetname">${element.name}</p>
+</div>
+`
+});
+container.innerHTML = fragment
 }
+template(dataCharacters)
+
+//ORDENA
+document.querySelector(".btn-ordenar").addEventListener('change', function (x) {
+  if (x.target.value === 'A-Z') {
+    const resultAZ = ordenarAlfabeticamente(dataCharacters)
+    container.innerHTML = ''
+    template(resultAZ)
+  } else {
+    container.innerHTML = ''
+    const resultZA = ordenarAlfabeticamente(dataCharacters).reverse();
+    template(resultZA)
+  }
+})
+const contenidoPrincipal = document.getElementById("sectionMostrando")
+const imagenPrincipal = document.getElementById("imgPrincipal");
+
+//OCULTAR PERSONAJES
+document.getElementById("books").addEventListener("click", function (y) {
+  container.style.display = "none";
+  imagenPrincipal.style.display = "none";
+
+ //VISTA DE LIBROS
+  const sectionBooks = document.createElement("section");
+  contenidoPrincipal.appendChild(sectionBooks);
+  sectionBooks.innerHTML = data.books;
+  console.log("mostar", data.books);
+  sectionBooks.className = "books"
+
+
+
+})
