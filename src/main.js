@@ -11,7 +11,7 @@ function template(dataCharacters) {
   dataCharacters.forEach((element) => {
     fragment += `
 <div class="cards">
-<img src="./img/Ppersonaje.png">
+<img src="./img/Ppersonaje.png" class="imgCharacter">
 <p class="objetname">${element.name}</p>
 </div>
 `;
@@ -39,11 +39,11 @@ const imagenPrincipal = document.getElementById("imgPrincipal");
 document.getElementById("books").addEventListener("click", function (y) {
   container.style.display = "none";
   imagenPrincipal.style.display = "none";
-
-  //VISTA DE LIBROS
-  const sectionBooks = document.createElement("section");
+});
+//VISTA DE LIBROS
+/*const sectionBooks = document.createElement("section");
   contenidoPrincipal.appendChild(sectionBooks);
   sectionBooks.innerHTML = data.books;
   console.log("mostar", data.books);
   sectionBooks.className = "books";
-});
+*/
