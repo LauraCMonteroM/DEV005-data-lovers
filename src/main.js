@@ -7,9 +7,9 @@ const dataBooks = dataHarryPotter.books;
 const container = document.getElementById("temp-characters");
 
 //CARDS
-function template(dataCharacters) {
+function template(card) {
 let fragment = '';
-dataCharacters.forEach(element => {
+card.forEach(element => {
   fragment += `
 <div class="cards">
 <img src="./img/Ppersonaje.png">
