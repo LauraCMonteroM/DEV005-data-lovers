@@ -1,3 +1,24 @@
+//FILTRAR
+function filtrar(dataHarryPotter, type) {
+  const characters = [...dataHarryPotter]
+  const filtrado = characters.filter(function (character) {
+    if (character.ancestry === type) {
+      return true;
+    } else if (character.gender === type) {
+      return true;
+    } else if (character.species === type) {
+      return true;
+    } else if ('character' === type) {
+      return true
+    } else {
+      return false
+    }
+  });
+  return filtrado;
+};
+
+
+//ORDENAR
 function ordenarAlfabeticamente(param) {
   const characters = [...param];
   const personajesOrdenados = characters.sort((a, b) => {
@@ -6,21 +27,17 @@ function ordenarAlfabeticamente(param) {
     if (a > b) {
       return 1;
     }
-    if (a < b) {
+    else if (a < b) {
       return -1;
-    }
-    return 0;
-  });
+    } else
+      return 0;
+  })
 
   return personajesOrdenados;
 }
 
-function filtrar(dataHarryPotter, string) {
-  const dataCharacters = dataHarryPotter.characters;
-  const filterCharacters = dataCharacters.filter(
-    (personaje) => personaje.specie === "Muggle"
-  );
-  //console.log(filterCharacters);
+export {
+  ordenarAlfabeticamente,
+  filtrar
 }
 
-export { ordenarAlfabeticamente, filtrar };
