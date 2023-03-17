@@ -1,5 +1,9 @@
 import dataHarryPotter from "./data/harrypotter/harry.js";
-import { ordenarAlfabeticamente } from "./data.js";
+import {
+  ordenarAlfabeticamente,
+  filtrar
+} from "./data.js";
+
 
 const dataCharacters = dataHarryPotter.characters;
 const dataBooks = dataHarryPotter.books;
@@ -7,9 +11,9 @@ const container = document.getElementById("temp-characters");
 
 //CARDS
 function template(card) {
-let fragment = '';
-card.forEach(element => {
-  fragment += `
+  let fragment = '';
+  card.forEach(element => {
+    fragment += `
 <div class="cards">
 <img src="./img/Ppersonaje.png" class="imgCharacter">
 <p class="objetname">${element.name}</p>
@@ -20,30 +24,27 @@ card.forEach(element => {
 }
 template(dataCharacters);
 
-//ORDENA
+//ORDENA  
 document.querySelector(".btn-ordenar").addEventListener("change", function (x) {
   if (x.target.value === "A-Z") {
     const resultAZ = ordenarAlfabeticamente(dataCharacters);
     container.innerHTML = "";
     template(resultAZ);
-  } else {
+  } else if (x.target.value === "Z-A") {
     container.innerHTML = "";
     const resultZA = ordenarAlfabeticamente(dataCharacters).reverse();
     template(resultZA);
+  } else if (x.target.value === "ordenar") {
+    container.innerHTML = "";
+    template(dataCharacters);
   }
 });
-const contenidoPrincipal = document.getElementById("sectionMostrando");
-const imagenPrincipal = document.getElementById("imgPrincipal");
 
-//OCULTAR PERSONAJES
-document.getElementById("books").addEventListener("click", function (y) {
-  container.style.display = "none";
-  imagenPrincipal.style.display = "none";
-});
-//VISTA DE LIBROS
-/*const sectionBooks = document.createElement("section");
-  contenidoPrincipal.appendChild(sectionBooks);
-  sectionBooks.innerHTML = data.books;
-  console.log("mostar", data.books);
-  sectionBooks.className = "books";
-*/
+
+//FILTRAR 
+document.querySelector(".btn-filtrar").addEventListener("change", function (e) {
+  const selectedValue = e.target.value;
+  const data = filtrar(dataCharacters, selectedValue);
+  template(data);
+})
+

@@ -1,58 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <img id="imgPrincipal" src="./img/fotoPrincipal.png" />
-      <img
-        class="header-img"
-        src="./img/hearderharrypotter.png"
-        alt="Harry Potter"
-      />
-      <nav>
-        <a class="header-menu" id="books" href="#">LIBROS</a>
-        <a class="header-menu" id="spells" href="#">HECHIZOS</a>
-        <a class="header-menu" id="potions" href="#">POCIONES</a>
-        <a class="header-menu" id="funfacts" href="#">DATOS CURIOSOS</a>
-        <a class="header-menu" id="study-house" href="#">CASAS DE ESTUDIO</a>
-      </nav>
-      <input
-        class="input-buscar"
-        type="search"
-        name="buscar"
-        placeholder="buscar..."
-      />
-      <button class="btn-buscar" value="Buscar">Buscar</button>
-    </header>
 
-    <main id="sectionMostrando">
-      <form action="#">
-        <select class="btn-filtrar" id="btn">
-          <option class="btn-filtrar-element" value="ORDENAR">FILTRAR</option>
-          <option class="btn-filtrar-element" value="Muggle">Muggle</option>
-          <option class="btn-filtrar-element" value="humanos">Humanos</option>
-          <option class="btn-filtrar-element" value="Personaje femenino">
-            Personajes femeninos
-          </option>
-          <option class="btn-filtrar-element" value="Personaje masculino">
-            Personajes masculinos
-          </option>
-        </select>
-        <select class="btn-ordenar">
-          <option value="ORDENAR">ORDENAR</option>
-          <option value="A-Z" id="A-Z">A-Z</option>
-          <option value="Z-A" id="Z-A">Z-A</option>
-        </select>
-      </form>
-      <h2>PERSONAJES</h2>
-      <section id="temp-characters"></section>
-      <div id="root"></div>
-    </main>
-    <script src="main.js" type="module"></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <img id="imgPrincipal" src="./img/fotoPrincipal.png" />
+    <img class="header-img" src="./img/hearderharrypotter.png" alt="Harry Potter" />
+    <nav>
+      <a class="header-menu" id="books" href="#">LIBROS</a>
+      <a class="header-menu" id="spells" href="#">HECHIZOS</a>
+      <a class="header-menu" id="potions" href="#">POCIONES</a>
+      <a class="header-menu" id="funfacts" href="#">DATOS CURIOSOS</a>
+      <a class="header-menu" id="study-house" href="#">CASAS DE ESTUDIO</a>
+    </nav>
+    <input class="input-buscar" type="search" name="buscar" placeholder="buscar..." />
+  </header>
+
+  <main id="sectionMostrando">
+    <form action="#">
+      <select class="btn-filtrar" id="btn">
+        <option class="btn-filtrar-element" value="character">FILTRAR</option>
+        <option class="btn-filtrar-element" id="muggle" value="Muggle">Muggle</option>
+        <option class="btn-filtrar-element" id="humanos" value="Human">Humanos</option>
+        <option class="btn-filtrar-element" id="personajeFemenino" value="Female">
+          Personajes femeninos
+        </option>
+        <option class="btn-filtrar-element" id="personajeMasculino" value="Male">
+          Personajes masculinos
+        </option>
+      </select>
+      <select class="btn-ordenar">
+        <option value="ordenar">ORDENAR</option>
+        <option value="A-Z" id="A-Z">A-Z</option>
+        <option value="Z-A" id="Z-A">Z-A</option>
+      </select>
+    </form>
+    <h2>PERSONAJES</h2>
+    <section id="temp-characters"></section>
+    <div id="root"></div>
+  </main>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
