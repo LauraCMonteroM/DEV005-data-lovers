@@ -4,8 +4,10 @@ import { ordenarAlfabeticamente } from "./data.js";
 const dataCharacters = dataHarryPotter.characters;
 const dataBooks = dataHarryPotter.books;
 const container = document.getElementById("temp-characters");
+const contenidoPrincipal = document.getElementById("sectionMostrando");
+const imagenPrincipal = document.getElementById("imgPrincipal");
 
-//CARDS
+//TEMPLATE-CARDS
 function template(dataCharacters) {
   let fragment = "";
   dataCharacters.forEach((element) => {
@@ -20,7 +22,7 @@ function template(dataCharacters) {
 }
 template(dataCharacters);
 
-//ORDENA
+//SORT BY A-Z & Z-A
 document.querySelector(".btn-ordenar").addEventListener("change", function (x) {
   if (x.target.value === "A-Z") {
     const resultAZ = ordenarAlfabeticamente(dataCharacters);
@@ -32,18 +34,17 @@ document.querySelector(".btn-ordenar").addEventListener("change", function (x) {
     template(resultZA);
   }
 });
-const contenidoPrincipal = document.getElementById("sectionMostrando");
-const imagenPrincipal = document.getElementById("imgPrincipal");
 
-//OCULTAR PERSONAJES
-document.getElementById("books").addEventListener("click", function (y) {
-  container.style.display = "none";
-  imagenPrincipal.style.display = "none";
+
+//FILTER BY SPECIE & GENRE
+document.querySelector(".btn-filtrar").addEventListener("change", function (y) {
+  if (y.target.value === "Muggle") {
+    const especieMuggle = filtrar(dataCharacters);
+    container.innerHTML = "";
+    template(especieMuggle);
+  } else if (y.target.value === "Human") {
+    const especieHuman = filtrar(dataCharacters);
+    container.innerHTML = "";
+    template(especieHuman);
+  }
 });
-//VISTA DE LIBROS
-/*const sectionBooks = document.createElement("section");
-  contenidoPrincipal.appendChild(sectionBooks);
-  sectionBooks.innerHTML = data.books;
-  console.log("mostar", data.books);
-  sectionBooks.className = "books";
-*/
