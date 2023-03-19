@@ -12020,41 +12020,49 @@ export default {
     {
       "id": 1,
       "type": "Author",
+      "img":"https://images-na.ssl-images-amazon.com/images/S/amzn-author-media-prod/8cigckin175jtpsk3gs361r4ss.jpg",
       "content": "J. K. Rowling"
     },
     {
       "id": 2,
       "type": "Protagonist",
+      "img":"https://media.revistavanityfair.es/photos/60e84a97bb9e71d46fd8d1f4/1:1/w_916,h_916,c_limit/39713.jpg",
       "content": "Harry Potter"
     },
     {
       "id": 3,
       "type": "Antatagonist",
+      "img":"https://eventos.elespanol.com/wp-content/uploads/2021/06/ponente-de-ejemplo.jpg",
       "content": "Lord Voldemort"
     },
     {
       "id": 4,
       "type": "Harry Potter's magic wand",
+      "img":"https://cdn.originalky.cz/images/0/458c705079760bb5/1/harry-potter-magic-wand-harry-potter-36-cm.jpg",
       "content": "Harry Potter's wand was 11 long, made of holly, and possessed a phoenix feather core. This was described by Garrick Ollivander to be an unusual combination of wand core and wood. The feather was donated by Fawkes, Albus Dumbledore's phoenix."
     },
     {
       "id": 5,
       "type": "Lord Voldemort's magic wand",
+      "img":"https://cdn.originalky.cz/images/0/6b78f1d12e2f00d2/2/magic-wand-lord-voldemort-harry-potter-36-cm.jpg",
       "content": "Lord Voldemort's wand was 11 long, made of holly, and possessed a phoenix feather core. This was described by Garrick Ollivander to be an unusual combination of wand core and wood. The feather was donated by Fawkes, Albus Dumbledore's phoenix."
     },
     {
       "id": 6,
       "type": "Lord Voldemort's real name",
+      "img":"https://smedia2.intoday.in/indiatoday/images/stories/2016May/18_051316044939.jpg",
       "content": "Tom Marvolo Riddle (mixing the letters it ends up being Lord Voldemort)"
     },
     {
       "id": 7,
       "type": "Houses",
+      "img":"https://static1.moviewebimages.com/wordpress/wp-content/uploads/2022/06/Hogwarts-Houses-(1).jpg",
       "content": "At the school Hogwarts there are four houses: Gryffindor, Ravenclaw, Hufflepuff and Slytherin"
     },
     {
       "id": 8,
       "type": "Wands",
+      "img":"./img/varitasgemelas.png",
       "content": "Harry's wand and Voldemort's wand were twins, that's why they couldn't kill each other"
     }
   ],
@@ -16171,6 +16179,7 @@ export default {
     {
       "id": 1,
       "title": "Harry Potter and the Sorcerer's Stone",
+      "img": 'https://ess.swanlibraries.net/bookcover.php?id=1ff6dadb-2592-278b-346a-1f62a959b06b-eng&size=large&type=grouped_work',
       "releaseDay": "June 26, 1997",
       "author": "J. K. Rowling",
       "description": "On his birthday, Harry Potter discovers that he is the son of two well-known wizards, from whom he has inherited magical powers. He must attend a famous school of magic and sorcery, where he establishes a friendship with two young men who will become his companions on his adventure. During his first year at Hogwarts, he discovers that a malevolent and powerful wizard named Voldemort is in search of a philosopher's stone that prolongs the life of its owner."
@@ -16178,6 +16187,7 @@ export default {
     {
       "id": 2,
       "title": "Harry Potter and the chamber of secrets",
+      "img": 'https://ess.swanlibraries.net/bookcover.php?id=bf121601-11e2-3b19-e815-baea87445abc-eng&size=large&type=grouped_work',
       "releaseDay": "July 2, 1998",
       "author": "J. K. Rowling",
       "description": "Harry Potter and the sophomores investigate a malevolent threat to their Hogwarts classmates, a menacing beast that hides within the castle."
@@ -16185,6 +16195,7 @@ export default {
     {
       "id": 3,
       "title": "Harry Potter and the Prisoner of Azkaban",
+      "img": 'https://ess.swanlibraries.net/bookcover.php?id=1df6b69f-51d9-3f5b-cb49-d8edb4746f72-eng&size=large&type=grouped_work',
       "releseDay": "July 8, 1999",
       "author": "J. K. Rowling",
       "description": "Harry's third year of studies at Hogwarts is threatened by Sirius Black's escape from Azkaban prison. Apparently, it is a dangerous wizard who was an accomplice of Lord Voldemort and who will try to take revenge on Harry Potter."
@@ -16192,6 +16203,7 @@ export default {
     {
       "id": 4,
       "title": "Harry Potter and the Goblet of Fire",
+      "img": 'https://ess.swanlibraries.net/bookcover.php?id=25177511-a024-8f30-dead-8977edc34d3f-eng&size=large&type=grouped_work',
       "releaseDay": "July 8, 2000",
       "author": "J. K. Rowling",
       "description": "Hogwarts prepares for the Triwizard Tournament, in which three schools of wizardry will compete. To everyone's surprise, Harry Potter is chosen to participate in the competition, in which he must fight dragons, enter the water and face his greatest fears."
@@ -16199,6 +16211,7 @@ export default {
     {
       "id": 5,
       "title": "Harry Potter and the Order of the Phoenix",
+      "img": 'https://ess.swanlibraries.net/bookcover.php?id=0a1aaa00-7c56-2d9e-da38-780c31e6f624-eng&size=large&type=grouped_work',
       "releaseDay": "June 21, 2003",
       "author": "J. K. Rowling",
       "description": "In his fifth year at Hogwarts, Harry discovers that many members of the wizarding community do not know the truth about his encounter with Lord Voldemort. Cornelius Fudge, Minister of Magic, appoints Dolores Umbridge as Defense Against the Dark Arts teacher because he believes that Professor Dumbledore plans to take over her job. But his teachings are inadequate, so Harry prepares the students to defend the school against evil."
@@ -16206,6 +16219,7 @@ export default {
     {
       "id": 6,
       "title": "Harry Potter and the Half-Blood Prince",
+      "img": 'https://ess.swanlibraries.net/bookcover.php?id=b9e87f59-91eb-fb8e-3760-86ef4ecdcf81-eng&size=large&type=grouped_work',
       "releaseDay": "July 16, 2005",
       "author": "J. K. Rowling",
       "description": "Harry discovers a powerful book and, while trying to discover its origins, collaborates with Dumbledore in the search for a series of magical objects that will aid in the destruction of Lord Voldemort."
@@ -16213,6 +16227,7 @@ export default {
     {
       "id": 7,
       "title": "Harry Potter and the Deathly Hallows",
+      "img": 'https://ess.swanlibraries.net/bookcover.php?id=280bc2d4-cdf1-4ac7-f2c5-255b65efda69-eng&size=large&type=grouped_work',
       "releaseDay": "July 21, 2007",
       "author": "J. K. Rowling",
       "description": "Harry, Ron and Hermione go on a dangerous mission to locate and destroy the secret of Voldemort's immortality and destruction - the Horcruces. Alone, without the guidance of their teachers or the protection of Professor Dumbledore, the three friends must lean on each other more than ever. But there are Dark Forces in between that threaten to tear them apart. Harry Potter is getting closer and closer to the task for which he has been preparing since the first day he set foot in Hogwarts: the last battle with Voldemort."
@@ -16220,6 +16235,7 @@ export default {
     {
       "id": 8,
       "title": "Harry Potter and the Cursed Child",
+      "img": 'https://ess.swanlibraries.net/bookcover.php?id=49099cfa-1ef0-bd35-c822-d35e1fd25cab-eng&size=large&type=grouped_work',
       "releaseDay": "July 30, 2016",
       "author": "J. K. Rowling",
       "description": "Harry's second son entered Hogwarts, but in Slytherin. His relationship with Harry is getting worse and he became close friends with Draco's son, Scorpius Malfoy who is said to be Lord Voldemort's son."
