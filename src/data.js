@@ -20,7 +20,7 @@ function filtrar(dataHarryPotter, type) {
 
 //ORDENAR
 function ordenarAlfabeticamente(param) {
-  const characters = [...param]
+  const characters = [...param];
   const personajesOrdenados = characters.sort((a, b) => {
     a = a.name.toLowerCase();
     b = b.name.toLowerCase();
@@ -36,8 +36,20 @@ function ordenarAlfabeticamente(param) {
   return personajesOrdenados;
 }
 
+/*function calcular (dataHarryPotter, calculo){
+  const characters = [...dataHarryPotter];  
+  const femaleCharacters = characters.reduce(function(contador, personaje){
+    if (personaje.gender === calculo){
+      return contador + 1;
+    } else {
+      return contador
+    }
+  },  0)}
+console.log(femaleCharacters)*/
+
 export {
   ordenarAlfabeticamente,
   filtrar
+  
 }
 
