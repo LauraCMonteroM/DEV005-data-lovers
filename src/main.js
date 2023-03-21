@@ -1,5 +1,5 @@
 import dataHarryPotter from "./data/harrypotter/harry.js";
-import { ordenarAlfabeticamente, filtrar } from "./data.js";
+import { ordenarAlfabeticamente, filtrar, calcular } from "./data.js";
 
 const dataCharacters = dataHarryPotter.characters;
 const dataBooks = dataHarryPotter.books;
@@ -16,7 +16,8 @@ const buttons = document.getElementById("btns");
 const sectionTitle = document.getElementById("titleSection");
 const facts = document.getElementById('funfacts')
 const funFactssection = document.getElementById('funFactssection');
-const btncalcular = document.getElementById('calc')
+const btncalcular = document.getElementById('calc');
+
 
 //CARDS CHARACTERS
 function template(card) {
@@ -56,15 +57,9 @@ document.querySelector(".btn-filtrar").addEventListener("change", function (e) {
   template(data);
 });
 
-//CALCULATE
-/*btncalcular.addEventListener("change", function (a) {
-  const selectedValue = a.target.value;
-  const data = calcular(dataCharacters, selectedValue);
-  template(data);
-})*/
+
 
 //CHANGE TO s.LIBROS
-
 function templateBooks(cardbooks) {
   let fragment = "";
   cardbooks.forEach((element) => {
@@ -119,7 +114,7 @@ facts.addEventListener("click", function (e) {
   charactersSection.style.display = "none";
   imagenPrincipal.style.display = "none";
   booksSection.style.display = "none";
-  buttons.style.display = "none";  
+  buttons.style.display = "none";
   booksSection.style.display = "none";
   funFactssection.style.display = "block";
   btncalcular.style.display = "block"
@@ -131,5 +126,16 @@ facts.addEventListener("click", function (e) {
   sectionTitle.style.marginTop = "100px"
   sectionTitle.style.marginLeft = "93px"
   facts.textContent = "PERSONAJES";
+
   templateBooks(dataBooks)
+});
+
+//CALCULATE
+btncalcular.addEventListener("click", function () {
+  const respuestaCalcular = document.getElementById('respuestaDatoCurioso');
+  respuestaCalcular.style.display = "block";
+  const data = calcular(dataCharacters, 'Female');
+  const respuesta = document.getElementById("respuestaDatoCurioso");
+  respuesta.innerHTML = "Existen " + data + " personajes femeninos";
+
 });

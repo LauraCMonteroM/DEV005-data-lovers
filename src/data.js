@@ -15,7 +15,7 @@ function filtrar(dataHarryPotter, type) {
     }
   });
   return filtrado;
-};
+}
 
 
 //ORDENAR
@@ -36,20 +36,23 @@ function ordenarAlfabeticamente(param) {
   return personajesOrdenados;
 }
 
-/*function calcular (dataHarryPotter, calculo){
-  const characters = [...dataHarryPotter];  
-  const femaleCharacters = characters.reduce(function(contador, personaje){
-    if (personaje.gender === calculo){
+function calcular(dataHarryPotter, gender) {
+  const characters = [...dataHarryPotter];
+  const cantidadFemale = characters.reduce(function (contador, personaje) {
+    if (personaje.gender === gender) {
       return contador + 1;
     } else {
       return contador
     }
-  },  0)}
-console.log(femaleCharacters)*/
+  }, 0);
+  return cantidadFemale;
+}
+
+
 
 export {
   ordenarAlfabeticamente,
-  filtrar
-  
+  filtrar,
+  calcular
 }
 

@@ -3,6 +3,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
 }
+
 nav {
   display: block;
   position: relative;
@@ -10,6 +11,7 @@ nav {
   width: 100%;
   margin-top: -599px;
 }
+
 main {
   background-image: url(img/fondo1.png);
   margin-top: 441px;
@@ -74,6 +76,7 @@ h2 {
   position: fixed;
   box-shadow: 5px 5px 5px #272727;
 }
+
 .btn-buscar {
   margin-top: -44px;
   margin-left: 1728px;
@@ -143,6 +146,7 @@ h2 {
   justify-content: center;
   font-size: 18px;
 }
+
 .cards:hover {
   background-color: #faba13;
 }
@@ -186,8 +190,8 @@ h2 {
   background-color: #faba13;
 }
 
-.typeFunFact {
-}
+/*.typeFunFact {
+}*/
 
 .imgFact {
   height: 250px;
@@ -246,11 +250,10 @@ h2 {
     width: 1349px;
   }
 
-  .header-img {
+  #header-img {
     position: fixed;
     margin-top: 0px;
     object-fit: cover;
-    width: 1353px;
     height: 148px;
     margin-left: -1350px;
   }
@@ -359,6 +362,77 @@ h2 {
   .btn-filtrar-element {
     font-size: 15px;
   }
+
+  /*element.style {
+}*/
+  .covercards:hover {
+    background-color: #faba13;
+  }
+
+  .covercards {
+    height: 406px;
+    width: 283px;
+    text-align: center;
+    background-color: #a4a4a4;
+    margin: 42px 24px;
+    display: inline-grid;
+    justify-content: center;
+    font-size: 15px;
+    border-radius: 20px;
+  }
+
+  .covercards:hover {
+    background-color: #faba13;
+  }
+
+  .bookCover {
+    height: 292px;
+    margin-left: 25px;
+    margin-top: 35px;
+  }
+
+  .factscards {
+    width: 596px;
+    height: 367px;
+    text-align: center;
+    background-color: #a4a4a4;
+    margin: 78px 38px;
+    display: inline-grid;
+    justify-content: center;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 15px;
+  }
+  #calc {
+    margin-top: 34px;
+    margin-left: 132px;
+    margin: -13px 115px;
+    height: 56px;
+    width: 499px;
+    border: white;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #272727;
+    font-weight: bold;
+    margin-top: 34px;
+    margin-left: 132px;
+}
+  #calc:hover {
+    background-color: #faba13;
+    margin-left: 132px;
+  }
+
+  #respuestaDatoCurioso {
+    background-color: #faba13;
+    margin: -13px 115px;
+    font-size: 25px;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: -56px;
+    margin-left: 708px;
+}
 }
 
 @media screen and (max-width: 390px) {
@@ -370,6 +444,7 @@ h2 {
     height: 91px;
     margin-left: -390px;
   }
+
   #imgPrincipal {
     margin-top: 32px;
     object-fit: cover;
@@ -437,6 +512,7 @@ h2 {
     justify-content: center;
     font-size: 12px;
   }
+
   .btn-filtrar-element {
     font-size: 12px;
   }
