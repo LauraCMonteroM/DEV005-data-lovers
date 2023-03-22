@@ -38,9 +38,9 @@ h2 {
 #calc {
   margin-top: 90px;
   margin-bottom: 90px;
-  margin-left: 780px;
+  margin-left: 710px;
   height: 58px;
-  width: 370px;
+  width: 479px;
   border: white;
   font-size: 25px;
   padding: 10px;
@@ -141,7 +141,7 @@ h2 {
   border-radius: 20px;
   text-align: center;
   padding-top: 10px;
-  margin: 65px 30px;
+  margin: 65px 64px;
   display: inline-grid;
   justify-content: center;
   font-size: 18px;
@@ -149,6 +149,12 @@ h2 {
 
 .cards:hover {
   background-color: #faba13;
+}
+
+.imgHouse {
+  width: 236px;
+  height: 216px;
+  border-radius: 10 10 10 10;
 }
 
 .covercards {
@@ -167,6 +173,32 @@ h2 {
   background-color: #faba13;
 }
 
+#funFactnswer {
+  width: 848px;
+  height: 450px;
+  text-align: center;
+  background-color: #a4a4a4;
+  margin: 46px 512px;
+  display: inline-grid;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.typeFunFact1 {
+  text-align: center;
+}
+
+.imgFact1 {
+  margin: 38px auto;
+  display: block;
+  border-radius: 10px;
+}
+
+#funFactnswer:hover {
+  background-color: #faba13;
+}
+
 .bookCover {
   height: 314px;
   margin-left: 35px;
@@ -174,11 +206,11 @@ h2 {
 }
 
 .factscards {
-  width: 900px;
+  width: 848px;
   height: 450px;
   text-align: center;
   background-color: #a4a4a4;
-  margin: 46px 496px;
+  margin: 46px 47px;
   display: inline-grid;
   justify-content: center;
   font-size: 18px;
@@ -189,9 +221,6 @@ h2 {
 .factscards:hover {
   background-color: #faba13;
 }
-
-/*.typeFunFact {
-}*/
 
 .imgFact {
   height: 250px;
@@ -363,8 +392,6 @@ h2 {
     font-size: 15px;
   }
 
-  /*element.style {
-}*/
   .covercards:hover {
     background-color: #faba13;
   }
@@ -417,10 +444,9 @@ h2 {
     font-weight: bold;
     margin-top: 34px;
     margin-left: 132px;
-}
+  }
   #calc:hover {
     background-color: #faba13;
-    margin-left: 132px;
   }
 
   #respuestaDatoCurioso {
@@ -432,11 +458,11 @@ h2 {
     text-align: center;
     margin-top: -56px;
     margin-left: 708px;
-}
+  }
 }
 
-@media screen and (max-width: 390px) {
-  .header-img {
+@media screen and (min-width: 390px) and (max-width: 1365px) {
+  #header-img {
     position: fixed;
     margin-top: 0px;
     object-fit: cover;
