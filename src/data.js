@@ -36,6 +36,8 @@ function ordenarAlfabeticamente(param) {
   return personajesOrdenados;
 }
 
+//CALCULAR
+
 function calcular(dataHarryPotter, gender) {
   const characters = [...dataHarryPotter];
   const cantidadFemale = characters.reduce(function (contador, personaje) {

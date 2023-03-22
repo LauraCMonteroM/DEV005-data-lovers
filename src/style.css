@@ -190,8 +190,6 @@ h2 {
   background-color: #faba13;
 }
 
-/*.typeFunFact {
-}*/
 
 .imgFact {
   height: 250px;
@@ -363,8 +361,7 @@ h2 {
     font-size: 15px;
   }
 
-  /*element.style {
-}*/
+
   .covercards:hover {
     background-color: #faba13;
   }
@@ -436,7 +433,7 @@ h2 {
 }
 
 @media screen and (max-width: 390px) {
-  .header-img {
+  #header-img {
     position: fixed;
     margin-top: 0px;
     object-fit: cover;
