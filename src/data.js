@@ -26,8 +26,7 @@ function ordenarAlfabeticamente(param) {
     b = b.name.toLowerCase();
     if (a > b) {
       return 1;
-    }
-    else if (a < b) {
+    }else if (a < b) {
       return -1;
     } else
       return 0;
@@ -36,6 +35,7 @@ function ordenarAlfabeticamente(param) {
   return personajesOrdenados;
 }
 
+//CALCULAR
 function calcular(dataHarryPotter, gender) {
   const characters = [...dataHarryPotter];
   const cantidadFemale = characters.reduce(function (contador, personaje) {
