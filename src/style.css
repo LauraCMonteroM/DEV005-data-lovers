@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
+  margin: 0px;
 }
 
 nav {
@@ -77,32 +77,6 @@ h2 {
   color: #faba13;
 }
 
-.input-buscar {
-  margin-top: -44px;
-  margin-left: 1474px;
-  height: 30px;
-  width: 280px;
-  border: white;
-  font-size: 15px;
-  padding-left: 16px;
-  border-radius: 10px;
-  position: fixed;
-  box-shadow: 5px 5px 5px #272727;
-}
-
-.btn-buscar {
-  margin-top: -44px;
-  margin-left: 1728px;
-  height: 30px;
-  width: 90px;
-  border: white;
-  font-size: 15px;
-  padding-left: 5px;
-  border-radius: 10px;
-  position: fixed;
-  box-shadow: 5px 5px 5px #272727;
-  font-weight: bold;
-}
 
 .btn-buscar:hover {
   background-color: #faba13;
@@ -198,6 +172,7 @@ h2 {
   border-radius: 20px;
   padding: 20px;
 }
+
 .typeFunFact1 {
   text-align: center;
 }
@@ -306,25 +281,25 @@ h2 {
   }
 
   #books {
-    margin-left: 34px;
+    margin-left: 211px;
     margin-top: 15px;
     font-size: 18px;
   }
 
   #spells {
-    margin-left: 128px;
+    margin-left: 403px;
     margin-top: 15px;
     font-size: 18px;
   }
 
   #potions {
-    margin-left: 250px;
+    margin-left: 849px;
     margin-top: 15px;
     font-size: 18px;
   }
 
   #funfacts {
-    margin-left: 378px;
+    margin-left: 1020px;
     margin-top: 15px;
     font-size: 18px;
   }
@@ -339,18 +314,10 @@ h2 {
     display: none;
   }
 
-  .input-buscar {
-    margin-top: -47px;
-    margin-left: 1029px;
-    height: 30px;
-    width: 285px;
-    border: white;
-    font-size: 15px;
-    padding-left: 16px;
-    border-radius: 10px;
-    position: fixed;
-    box-shadow: 5px 5px 5px #272727;
+  .open {
+    display: none;
   }
+
 
   main {
     background-image: url(img/fondo1.png);
@@ -438,19 +405,20 @@ h2 {
     height: 367px;
     text-align: center;
     background-color: #a4a4a4;
-    margin: 78px 38px;
+    margin: 61px  38px;
     display: inline-grid;
     justify-content: center;
     font-size: 15px;
     border-radius: 20px;
     padding: 15px;
   }
+
   #calc {
     margin-top: 34px;
     margin-left: 132px;
     margin: -13px 115px;
     height: 56px;
-    width: 499px;
+    width: 537px;
     border: white;
     font-size: 25px;
     padding: 10px;
@@ -458,23 +426,87 @@ h2 {
     box-shadow: 5px 5px 5px #272727;
     font-weight: bold;
     margin-top: 34px;
-    margin-left: 132px;
+    margin-left: 390px
   }
+
   #calc:hover {
     background-color: #faba13;
   }
 
-  #respuestaDatoCurioso {
-    background-color: #faba13;
-    margin: -13px 115px;
-    font-size: 25px;
-    padding: 12px;
-    border-radius: 10px;
+  #funFactnswer {
+    width: 567px;
+    height: 367px;
     text-align: center;
-    margin-top: -56px;
-    margin-left: 708px;
+    background-color: #a4a4a4;
+    margin: 61px  380px;
+    display: inline-grid;
+    justify-content: center;
+    font-size: 19px;
+    border-radius: 20px;
+    padding: 15px;
+  }
+
+  .imgFact1 {
+    margin: 25px auto;
+    display: block;
+    border-radius: 28px;
+    height: 230px;
+  }
+
+  .cardsPotions {
+    width: 211px;
+    height: 454px;
+    text-align: center;
+    background-color: #a4a4a4;
+    margin: 40px 27px;
+    display: inline-grid;
+    justify-content: center;
+    font-size: 13px;
+    border-radius: 20px;
+    padding: 15px;
+  }
+
+  .cardsSpells {
+    width: 211px;
+    height: 146px;
+    background-color: #a4a4a4;
+    margin: 40px 27px;
+    display: inline-grid;
+    justify-content: center;
+    font-size: 13px;
+    border-radius: 20px;
+    padding: 15px;
+  }
+
+  #spellsBtnOrdenar {
+    margin-top: 0px;
+    margin-left: 1152px;
+    height: 30px;
+    width: 161px;
+    border: white;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #272727;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+
+  #potionsBtnOrdenar {
+    margin-top: 0px;
+    margin-left: 1152px;
+    height: 30px;
+    width: 161px;
+    border: white;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #272727;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
   }
 }
+
 
 @media screen and (min-width: 390px) and (max-width: 1365px) {
   #header-img {
@@ -544,8 +576,8 @@ h2 {
   }
 
   .btn-filtrar {
-    margin-top: 131px;
-    margin-left: 19px;
+    margin-top: 0px;
+    margin-left: 937px;
     height: 30px;
     width: 161px;
     border: none;
@@ -561,7 +593,7 @@ h2 {
 
   .btn-ordenar {
     margin-top: -30px;
-    margin-left: 196px;
+    margin-left: 1141px;
     height: 30px;
     width: 161px;
     border: white;

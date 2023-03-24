@@ -36,47 +36,55 @@
       />
     </header>
 
-    <main id="sectionMostrando">
-      <form action="#" id="btns">
-        <select class="btn-filtrar" id="btn">
-          <option class="btn-filtrar-element" value="character">FILTRAR</option>
-          <option class="btn-filtrar-element" id="muggle" value="Muggle">
-            Muggle
-          </option>
-          <option class="btn-filtrar-element" id="humanos" value="Human">
-            Humanos
-          </option>
-          <option
-            class="btn-filtrar-element"
-            id="personajeFemenino"
-            value="Female"
-          >
-            Personajes femeninos
-          </option>
-          <option
-            class="btn-filtrar-element"
-            id="personajeMasculino"
-            value="Male"
-          >
-            Personajes masculinos
-          </option>
-        </select>
-        <select class="btn-ordenar">
-          <option value="ordenar">ORDENAR</option>
-          <option value="A-Z" id="A-Z">A-Z</option>
-          <option value="Z-A" id="Z-A">Z-A</option>
-        </select>
-      </form>
-      <h2 id="titleSection">PERSONAJES</h2>
-      <button id="calc" style="display: none">
-        ¡DATO CURIOSO DEL MES MARZO 🕵️‍♀️!
-      </button>
-      <div id="funFactnswer" style="display: none"></div>
-      <section id="temp-characters"></section>
-      <section id="bookssection" style="display: none"></section>
-      <section id="funFactssection" style="display: none"></section>
-      <div id="root"></div>
-    </main>
-    <script src="main.js" type="module"></script>
-  </body>
+  <main id="sectionMostrando">
+    <form action="#" id="btns">
+      <select class="btn-filtrar" id="btn">
+        <option class="btn-filtrar-element" value="character">FILTER BY</option>
+        <option class="btn-filtrar-element" id="muggle" value="Muggle">
+          Muggle
+        </option>
+        <option class="btn-filtrar-element" id="houseGryffindor" value="Gryffindor">
+          House Gryffindor
+        </option>
+        <option class="btn-filtrar-element" id="houseRavenclaw" value="Ravenclaw">
+          House Ravenclaw
+        </option>
+        <option class="btn-filtrar-element" id="houseSlytherin" value="Slytherin"> House Slytherin
+        </option>
+        <option class="btn-filtrar-element" id="houseHafflepuff" value="Hufflepuff"> House Hufflepuff
+        </option>
+      </select>
+      <select class="btn-ordenar">
+        <option value="ordenar">SORT BY</option>
+        <option value="A-Z" id="A-Z">Ascending</option>
+        <option value="Z-A" id="Z-A">Descending</option>
+      </select>
+    </form>
+    <h2 id="titleSection">CHARACTERS</h2>
+    <button id="calc" style="display: none">
+      ¡FUN FACT OF THE MONTH OF MARCH 🕵️‍♀️!
+    </button>
+    <div id="funFactnswer" style="display: none">
+    </div>
+    <section id="temp-characters"></section>
+    <section id="bookssection" style="display: none"></section>
+    <section id="funFactssection" style="display: none"></section>
+    <select id="potionsBtnOrdenar" style="display: none">
+      <option value="ordenar">SORT BY</option>
+      <option value="A-Z" >Ascending</option>
+      <option value="Z-A" >Descending</option>
+    </select>
+    <section id="potionsSection" style="display: none"></section>
+    <select id="spellsBtnOrdenar" style="display: none">
+      <option value="ordenar">SORT BY</option>
+      <option value="A-Z">Ascending</option>
+      <option value="Z-A" >Descending</option>
+    </select>
+    <section id="spellsSection" style="display: none"></section>
+
+    <div id="root"></div>
+  </main>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
