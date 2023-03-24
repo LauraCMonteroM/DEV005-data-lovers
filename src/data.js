@@ -4,9 +4,9 @@ function filtrar(dataHarryPotter, type) {
   const filtrado = characters.filter(function (character) {
     if (character.ancestry === type) {
       return true;
-    } else if (character.gender === type) {
-      return true;
     } else if (character.species === type) {
+      return true;
+    } else if (character.house === type) {
       return true;
     } else if ('character' === type) {
       return true
@@ -22,16 +22,14 @@ function filtrar(dataHarryPotter, type) {
 function ordenarAlfabeticamente(param) {
   const characters = [...param];
   const personajesOrdenados = characters.sort((a, b) => {
-    a = a.name.toLowerCase();
-    b = b.name.toLowerCase();
-    if (a > b) {
+    const A = a.name.toLowerCase();
+    const B = b.name.toLowerCase();
+    if (A > B) {
       return 1;
-    }else if (a < b) {
+    } else {
       return -1;
-    } else
-      return 0;
+    }
   })
-
   return personajesOrdenados;
 }
 
