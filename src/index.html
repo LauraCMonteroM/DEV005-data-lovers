@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Lovers</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -28,63 +31,75 @@
           </li>
         </ul>
       </nav>
-      <input
-        class="input-buscar"
-        type="search"
-        name="buscar"
-        placeholder="buscar..."
-      />
     </header>
 
-  <main id="sectionMostrando">
-    <form action="#" id="btns">
-      <select class="btn-filtrar" id="btn">
-        <option class="btn-filtrar-element" value="character">FILTER BY</option>
-        <option class="btn-filtrar-element" id="muggle" value="Muggle">
-          Muggle
-        </option>
-        <option class="btn-filtrar-element" id="houseGryffindor" value="Gryffindor">
-          House Gryffindor
-        </option>
-        <option class="btn-filtrar-element" id="houseRavenclaw" value="Ravenclaw">
-          House Ravenclaw
-        </option>
-        <option class="btn-filtrar-element" id="houseSlytherin" value="Slytherin"> House Slytherin
-        </option>
-        <option class="btn-filtrar-element" id="houseHafflepuff" value="Hufflepuff"> House Hufflepuff
-        </option>
-      </select>
-      <select class="btn-ordenar">
+    <main id="sectionMostrando">
+      <form action="#" id="btns">
+        <select class="btn-filtrar" id="btn">
+          <option class="btn-filtrar-element" value="character">
+            FILTER BY
+          </option>
+          <option class="btn-filtrar-element" id="muggle" value="Muggle">
+            Muggle
+          </option>
+          <option
+            class="btn-filtrar-element"
+            id="houseGryffindor"
+            value="Gryffindor"
+          >
+            House Gryffindor
+          </option>
+          <option
+            class="btn-filtrar-element"
+            id="houseRavenclaw"
+            value="Ravenclaw"
+          >
+            House Ravenclaw
+          </option>
+          <option
+            class="btn-filtrar-element"
+            id="houseSlytherin"
+            value="Slytherin"
+          >
+            House Slytherin
+          </option>
+          <option
+            class="btn-filtrar-element"
+            id="houseHafflepuff"
+            value="Hufflepuff"
+          >
+            House Hufflepuff
+          </option>
+        </select>
+        <select class="btn-ordenar">
+          <option value="ordenar">SORT BY</option>
+          <option value="A-Z" id="A-Z">Ascending</option>
+          <option value="Z-A" id="Z-A">Descending</option>
+        </select>
+      </form>
+      <h2 id="titleSection">CHARACTERS</h2>
+      <button id="calc" style="display: none">
+        ¡MARCH MONTH'S FUN FACT 🕵️‍♀️!
+      </button>
+      <div id="funFactnswer" style="display: none"></div>
+      <section id="temp-characters"></section>
+      <section id="bookssection" style="display: none"></section>
+      <section id="funFactssection" style="display: none"></section>
+      <select id="potionsBtnOrdenar" style="display: none">
         <option value="ordenar">SORT BY</option>
-        <option value="A-Z" id="A-Z">Ascending</option>
-        <option value="Z-A" id="Z-A">Descending</option>
+        <option value="A-Z">Ascending</option>
+        <option value="Z-A">Descending</option>
       </select>
-    </form>
-    <h2 id="titleSection">CHARACTERS</h2>
-    <button id="calc" style="display: none">
-      ¡FUN FACT OF THE MONTH OF MARCH 🕵️‍♀️!
-    </button>
-    <div id="funFactnswer" style="display: none">
-    </div>
-    <section id="temp-characters"></section>
-    <section id="bookssection" style="display: none"></section>
-    <section id="funFactssection" style="display: none"></section>
-    <select id="potionsBtnOrdenar" style="display: none">
-      <option value="ordenar">SORT BY</option>
-      <option value="A-Z" >Ascending</option>
-      <option value="Z-A" >Descending</option>
-    </select>
-    <section id="potionsSection" style="display: none"></section>
-    <select id="spellsBtnOrdenar" style="display: none">
-      <option value="ordenar">SORT BY</option>
-      <option value="A-Z">Ascending</option>
-      <option value="Z-A" >Descending</option>
-    </select>
-    <section id="spellsSection" style="display: none"></section>
+      <section id="potionsSection" style="display: none"></section>
+      <select id="spellsBtnOrdenar" style="display: none">
+        <option value="ordenar">SORT BY</option>
+        <option value="A-Z">Ascending</option>
+        <option value="Z-A">Descending</option>
+      </select>
+      <section id="spellsSection" style="display: none"></section>
 
-    <div id="root"></div>
-  </main>
-  <script src="main.js" type="module"></script>
-</body>
-
+      <div id="root"></div>
+    </main>
+    <script src="main.js" type="module"></script>
+  </body>
 </html>

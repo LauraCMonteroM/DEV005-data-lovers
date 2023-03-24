@@ -78,7 +78,7 @@ btncalcular.addEventListener("click", function () {
   const h3 = '<h3 class= "typeFunFact1">Did you know ...</h3>';
   const imgwomen = '<img src="./img/datocuriosomujeres.png" class="imgFact1">';
   calculatedFunfact.style.display = "block";
-  calculatedFunfact.innerHTML = h3 + imgwomen + "There are " + data + " female characters in the saga";
+  calculatedFunfact.innerHTML = h3 + imgwomen + "There are " + data + " female characters in this saga?";
 });
 
 //CHANGE TO s.LIBROS
@@ -109,10 +109,10 @@ books.addEventListener("click", function (e) {
   imgHeader.style.marginTop = "0px";
   imgHeader.style.marginLeft = "0px";
   navBarTexts.style.marginTop = "0px";
-  contenidoPrincipal.style.marginTop = "-10px";
+  contenidoPrincipal.style.marginTop = "0px";
   sectionTitle.textContent = "BOOKS";
-  sectionTitle.style.marginTop = "90px";
-  sectionTitle.style.marginLeft = "23px";
+  sectionTitle.style.marginTop = "100px";
+  sectionTitle.style.marginLeft = "93px";
   calculatedFunfact.style.display = "none";
   potionsSection.style.display = "none";
   spellsSection.style.display = "none";
@@ -151,8 +151,8 @@ facts.addEventListener("click", function (e) {
   navBarTexts.style.marginTop = "0px";
   contenidoPrincipal.style.marginTop = "-10px";
   sectionTitle.textContent = "FUN FACTS";
-  sectionTitle.style.marginTop = "90px";
-  sectionTitle.style.marginLeft = "33px";
+  sectionTitle.style.marginTop = "100px";
+  sectionTitle.style.marginLeft = "93px";
   spellsSection.style.display = "none";
   potionsSection.style.display = "none";
   templateFunFacts(dataFacts);
@@ -164,14 +164,15 @@ imgHeader.addEventListener("click", function (p) {
   btncalcular.style.display = "none";
   booksSection.style.display = "none";
   funFactssection.style.display = "none";
+  calculatedFunfact.style.display = "none"
   charactersSection.style.display = "block";
   imagenPrincipal.style.display = "block";
   imgHeader.style.display = "block";
   buttons.style.display = "block";
-  imgHeader.style.marginTop = "-433px";
+  imgHeader.style.marginTop = "-595px";
   imgHeader.style.marginLeft = "0px";
-  navBarTexts.style.marginTop = "-432px";
-  contenidoPrincipal.style.marginTop = "269px";
+  navBarTexts.style.marginTop = "-595px";
+  contenidoPrincipal.style.marginTop = "435px";
   sectionTitle.textContent = "CHARACTERS";
   sectionTitle.style.marginTop = "4px";
 });
@@ -240,8 +241,9 @@ function templateSpells(cardSpells) {
     fragment += `
 <div class="cardsSpells">
 <p class="spellsName"><strong>${element.name}</strong> </p>
-<p class="spellsName">${element.spell_type} </p>
-<p class="spellsDescripcion">${element.pronunciation}</p>
+<img class= "imgSpell" src="./img/varita.png"/>
+<p class="spellsName"> Type:    ${element.spell_type} </p>
+<p class="spellsDescripcion"> Pronunciation:    ${element.pronunciation}</p>
 </div>
 `;
   });

@@ -12021,19 +12021,19 @@ export default {
       "id": 1,
       "type": "Author",
       "img":"https://images-na.ssl-images-amazon.com/images/S/amzn-author-media-prod/8cigckin175jtpsk3gs361r4ss.jpg",
-      "content": "J. K. Rowling"
+      "content": "J. K. Rowling is a British writer, film producer and screenwriter, which have sold more than half a billion copies."
     },
     {
       "id": 2,
       "type": "Protagonist",
       "img":"https://media.revistavanityfair.es/photos/60e84a97bb9e71d46fd8d1f4/1:1/w_916,h_916,c_limit/39713.jpg",
-      "content": "Harry Potter"
+      "content": "Harry Potter. On his eleventh birthday he learns that he is a wizard and the plot of the books focuses mainly on the years in which the orphan Potter attends Hogwarts School of Witchcraft and Wizardry to practice under the guidance of headmaster Albus Dumbledore and other teachers."
     },
     {
       "id": 3,
       "type": "Antatagonist",
       "img":"https://eventos.elespanol.com/wp-content/uploads/2021/06/ponente-de-ejemplo.jpg",
-      "content": "Lord Voldemort"
+      "content": "Lord Voldemort is Harry Potter's main enemy, who, according to a prophecy, has the power to defeat him. The magical community fears Voldemort so much that they prefer to refer to him as He-Who-Must-Not-Be-Named."
     },
     {
       "id": 4,
@@ -12082,7 +12082,7 @@ export default {
       "id": 2,
       "name": "Accio",
       "other_name": "Summoning Charm",
-      "pronunciation": "Various, including: AK-ee-oh or AK-see-oh , AK-see-oh , AS-see-oh (US), and AT-chee-oh (Anglo-Catholic pronunciation)",
+      "pronunciation": "AK-ee-oh or AK-see-oh",
       "spell_type": "Charm",
       "description": "Summons an object towards the caster. It is able to summon objects in direct line of sight of the caster, as well as things out of view, by calling the object aloud after the incantation (unless the spell is casted nonverbally). This spell needs thought behind it, and the object must be clear in the casters mind before trying to summon it. The caster doesn't necessarily need to know the location of the target if they say the name of the object to be summoned, such as when Hermione Granger summoned some books from Dumbledore's office simply by saying \"Accio Horcrux books!\" while in Gryffindor Tower.",
       "mention": "Harry Potter summoned his broom to complete the first task of the Triwizard Tournament in 1994, and to summon the Portkey to escape Voldemort and the Death Eaters in the Little Hangleton Graveyard in 1995. Also, in the Battle of the Seven Potters Harry summoned Hagrid when he fell. Molly Weasley used it to get the twins' candy. The twins used it to summon their brooms from Dolores Umbridge's office",
@@ -15946,7 +15946,7 @@ export default {
     {
       "id": 105,
       "name": "Polyjuice Potion",
-      "description": "Temporarily transforms the drinker into another person. The drinker will take on the appearance of the person whose hair, fingernails, etc., are added to the potion. Not to be used for transforming into an animal. Seen/Mentioned: In 1992 used by Harry and Ron to enter Slytherin common Room; Severus Snape thought Harry was stealing his ingredients to make a polyjuice potion; Used multiple times in 1997 and 1998."
+      "description": "Temporarily transforms the drinker into another person. The drinker will take on the appearance of the person whose hair, fingernails, etc., are added to the potion. Not to be used for transforming into an animal.Used multiple times in 1997 and 1998."
     },
     {
       "id": 106,
