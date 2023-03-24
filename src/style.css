@@ -53,6 +53,19 @@ h2 {
   background-color: #faba13;
 }
 
+.nav-list {
+  display: flex;
+  list-style-type: none;
+}
+
+#open {
+  display: none;
+}
+
+#close {
+  display: none;
+}
+
 .header-menu {
   position: fixed;
   text-decoration: none;
@@ -242,30 +255,28 @@ h2 {
   margin-left: 34px;
   margin-top: 15px;
   font-size: 20px;
+  color: white;
 }
 
 #spells {
-  margin-left: 182px;
+  margin-left: 273px;
   margin-top: 15px;
   font-size: 20px;
+  color: white;
 }
 
 #potions {
-  margin-left: 344px;
+  margin-left: 546px;
   margin-top: 15px;
   font-size: 20px;
+  color: white;
 }
 
 #funfacts {
-  margin-left: 542px;
+  margin-left: 1149px;
   margin-top: 15px;
   font-size: 20px;
-}
-
-#study-house {
-  margin-left: 1193px;
-  margin-top: 15px;
-  font-size: 20px;
+  color: white;
 }
 
 #temp-charcters {
@@ -322,6 +333,10 @@ h2 {
     margin-left: 826px;
     margin-top: 15px;
     font-size: 18px;
+  }
+
+  .open {
+    display: none;
   }
 
   .input-buscar {
@@ -472,10 +487,60 @@ h2 {
   }
 
   #imgPrincipal {
-    margin-top: 32px;
+    margin-top: 30px;
     object-fit: cover;
     width: 390px;
     height: 169px;
+  }
+
+  #books {
+    display: flexbox;
+    margin-left: -348px;
+    margin-top: 4px;
+    font-size: 18px;
+  }
+
+  #spells {
+    display: flex;
+    margin-left: -349px;
+    margin-top: 40px;
+    font-size: 18px;
+  }
+
+  #potions {
+    display: flex;
+    margin-left: -349px;
+    margin-top: 76px;
+    font-size: 18px;
+  }
+
+  #funfacts {
+    margin-left: -349px;
+    margin-top: 111px;
+    font-size: 18px;
+    display: flex;
+  }
+
+  #open {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    border: 0;
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-left: 340px;
+  }
+
+  #close {
+    border: 0;
+    display: block;
+    border: 0;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
   }
 
   .btn-filtrar {
@@ -509,6 +574,24 @@ h2 {
     padding: 2px;
   }
 
+  #sections {
+    display: none;
+    background-color: #5a5c5e;
+    height: 200px;
+    position: absolute;
+    top: 0px;
+    padding: 20px;
+    align-items: end;
+    flex-direction: column;
+    margin-top: 0px;
+    font-size: 12px;
+  }
+
+  a {
+    flex-direction: column;
+    align-items: end;
+  }
+
   h2 {
     color: white;
     margin-left: 108px;
@@ -517,14 +600,16 @@ h2 {
 
   main {
     background-image: url(img/fondo390.png);
-    margin-top: 89px;
+    margin-top: -110px;
     padding-top: 10px;
     width: 390px;
   }
 
-  .imgCharacter {
-    height: 129px;
-  }
+  .imgHouse {
+    height: 130px;
+    width: 140px;
+    border-radius: 10px 10px 0px 0px;
+}
 
   .cards {
     height: 186px;
@@ -532,12 +617,12 @@ h2 {
     background-color: #a4a4a4;
     border-radius: 20px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 9px;
     margin: 16px 18px;
     display: inline-grid;
     justify-content: center;
     font-size: 12px;
-  }
+}
 
   .btn-filtrar-element {
     font-size: 12px;

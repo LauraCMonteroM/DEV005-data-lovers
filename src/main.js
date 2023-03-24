@@ -25,7 +25,7 @@ const imgHouses = {
   Hufflepuff: "./img/Hufflepuff.jpg",
   Ravenclaw: "./img/Ravenclaw.jpg",
   Slytherin: "./img/Slytherin.jpg",
-  null: 
+  null: "./img/Slytherin.jpg",
 };
 
 function template(card) {
@@ -96,6 +96,7 @@ books.addEventListener("click", function (e) {
   buttons.style.display = "none";
   funFactssection.style.display = "none";
   btncalcular.style.display = "none";
+  calculatedFunfact.style.display = "none";
   booksSection.style.display = "block";
   imgHeader.style.display = "block";
   imgHeader.style.marginTop = "0px";
@@ -158,3 +159,19 @@ imgHeader.addEventListener("click", function (p) {
   contenidoPrincipal.style.marginTop = "435px";
   sectionTitle.textContent = "PERSONAJES";
 });
+
+
+//HAMB MENU FOR PHONE
+const nav = document.getElementById("sections");
+const open = document.getElementById("open");
+const close = document.getElementById("close")
+
+open.addEventListener("click", () => {
+  nav.style.display = "flex";
+  open.style.display = "none";
+})
+
+close.addEventListener("click",() =>{
+  nav.style.display = "none"
+  open.style.display = "block";
+})

@@ -4,11 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Lovers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header>
+      <button id="open"><i class="bi bi-list"></i></button>
       <img id="imgPrincipal" src="./img/fotoPrincipal.png" />
       <img
         id="header-img"
@@ -16,11 +18,15 @@
         alt="Harry Potter"
       />
       <nav id="sections">
-        <a href="#" class="header-menu" id="books">LIBROS</a>
-        <a href="#" class="header-menu" id="spells">HECHIZOS</a>
-        <a href="#" class="header-menu" id="potions">POCIONES</a>
-        <a href="#" class="header-menu" id="funfacts">DATOS CURIOSOS</a>
-        <a href="#" class="header-menu" id="study-house">CASAS DE ESTUDIO</a>
+        <button id="close"><i class="bi bi-x-lg"></i></button>
+        <ul class="nav-list">
+          <li><a href="#" class="header-menu" id="books">LIBROS</a></li>
+          <li><a href="#" class="header-menu" id="spells">HECHIZOS</a></li>
+          <li><a href="#" class="header-menu" id="potions">POCIONES</a></li>
+          <li>
+            <a href="#" class="header-menu" id="funfacts">DATOS CURIOSOS</a>
+          </li>
+        </ul>
       </nav>
       <input
         class="input-buscar"
@@ -65,8 +71,7 @@
       <button id="calc" style="display: none">
         ¡DATO CURIOSO DEL MES MARZO 🕵️‍♀️!
       </button>
-      <div id="funFactnswer" style="display: none" >        
-      </div>
+      <div id="funFactnswer" style="display: none"></div>
       <section id="temp-characters"></section>
       <section id="bookssection" style="display: none"></section>
       <section id="funFactssection" style="display: none"></section>
