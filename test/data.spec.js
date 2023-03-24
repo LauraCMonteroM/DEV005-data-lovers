@@ -17,12 +17,12 @@ describe("Testea la función filtrar", () => {
 
   it("returns `3`", () => {
     const character = [
-      { id: 1, gender: "Male" },
-      { id: 2, gender: "Male" },
-      { id: 3, gender: "Male" },
-      { id: 4, gender: "Female" },
+      { id: 1, house: "Gryffindor" },
+      { id: 2, house: "Slytherin" },
+      { id: 3, house: "Gryffindor" },
+      { id: 4, house: "Gryffindor" },
     ];
-    expect(filtrar(character, "Male").length).toBe(3);
+    expect(filtrar(character, "Gryffindor").length).toBe(3);
   });
 
   it("returns `2`", () => {
@@ -34,6 +34,18 @@ describe("Testea la función filtrar", () => {
     ];
     expect(filtrar(character, "Human").length).toBe(2);
   });
+
+  it('returns `[{ id: 1, name:"Euan Abercrombie"}, { id: 2, name: "Stewart Ackerley" }]`', () => {
+    const character = [
+      { id: 1, name: "Euan Abercrombie" },
+      { id: 2, name: "Stewart Ackerley" },
+    ];
+    expect(filtrar(character, "character")).toEqual([
+      { id: 1, name: "Euan Abercrombie" },
+      { id: 2, name: "Stewart Ackerley" },
+    ]);
+  });
+
 });
 
 describe("Testea la función ordenarAlfabeticamente", () => {
@@ -54,7 +66,7 @@ describe("Testea la función ordenarAlfabeticamente", () => {
       { name: "Cornelius Agrippa" },
       { name: "Xenophilius Lovegood" },
     ]);
-  });  
+  });
 });
 
 describe("Testea la función calcular", () => {

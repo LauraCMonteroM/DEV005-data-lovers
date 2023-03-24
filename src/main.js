@@ -4,6 +4,8 @@ import { ordenarAlfabeticamente, filtrar, calcular } from "./data.js";
 const dataCharacters = dataHarryPotter.characters;
 const dataBooks = dataHarryPotter.books;
 const dataFacts = dataHarryPotter.funFacts;
+const dataPotions = dataHarryPotter.potions;
+const dataSpells = dataHarryPotter.spells;
 const charactersSection = document.getElementById("temp-characters");
 const booksSection = document.getElementById("bookssection");
 const funFactssection = document.getElementById("funFactssection");
@@ -17,15 +19,20 @@ const sectionTitle = document.getElementById("titleSection");
 const facts = document.getElementById("funfacts");
 const btncalcular = document.getElementById("calc");
 const calculatedFunfact = document.getElementById("funFactnswer");
+const potions = document.getElementById("potions");
+const potionsSection = document.getElementById("potionsSection");
+const spells = document.getElementById("spells");
+const spellsSection = document.getElementById("spellsSection");
+const btnOrdenarSpells = document.getElementById("spellsBtnOrdenar");
+const potionsBtnOrdenar = document.getElementById("potionsBtnOrdenar");
 
 //CARDS CHARACTERS
-
 const imgHouses = {
   Gryffindor: "./img/Gryffindor.png",
   Hufflepuff: "./img/Hufflepuff.jpg",
   Ravenclaw: "./img/Ravenclaw.jpg",
   Slytherin: "./img/Slytherin.jpg",
-  null: 
+  null: "./img/sinCasa.png",
 };
 
 function template(card) {
@@ -68,10 +75,10 @@ document.querySelector(".btn-filtrar").addEventListener("change", function (e) {
 //CALCULATE
 btncalcular.addEventListener("click", function () {
   const data = calcular(dataCharacters, "Female");
-  const h3 = '<h3 class= "typeFunFact1">Sabías qué...</h3>';
+  const h3 = '<h3 class= "typeFunFact1">Did you know ...</h3>';
   const imgwomen = '<img src="./img/datocuriosomujeres.png" class="imgFact1">';
   calculatedFunfact.style.display = "block";
-  calculatedFunfact.innerHTML = h3 + imgwomen + "Existen " + data + " personajes femeninos en la saga?";
+  calculatedFunfact.innerHTML = h3 + imgwomen + "There are " + data + " female characters in the saga";
 });
 
 //CHANGE TO s.LIBROS
@@ -99,11 +106,15 @@ books.addEventListener("click", function (e) {
   booksSection.style.display = "block";
   imgHeader.style.display = "block";
   imgHeader.style.marginTop = "0px";
+  imgHeader.style.marginLeft = "0px";
   navBarTexts.style.marginTop = "0px";
-  contenidoPrincipal.style.marginTop = "0px";
-  sectionTitle.textContent = "LIBROS";
-  sectionTitle.style.marginTop = "100px";
-  sectionTitle.style.marginLeft = "93px";
+  contenidoPrincipal.style.marginTop = "-10px";
+  sectionTitle.textContent = "BOOKS";
+  sectionTitle.style.marginTop = "90px";
+  sectionTitle.style.marginLeft = "23px";
+  calculatedFunfact.style.display = "none";
+  potionsSection.style.display = "none";
+  spellsSection.style.display = "none";
   templateBooks(dataBooks);
 });
 
@@ -133,14 +144,17 @@ facts.addEventListener("click", function (e) {
   funFactssection.style.display = "block";
   btncalcular.style.display = "block";
   imgHeader.style.display = "block";
-  calculatedFunfact.style.display = "block";
+  calculatedFunfact.style.display = "none";
   imgHeader.style.marginTop = "0px";
+  imgHeader.style.marginLeft = "0px";
   navBarTexts.style.marginTop = "0px";
-  contenidoPrincipal.style.marginTop = "0px";
-  sectionTitle.textContent = "DATOS CURIOSOS";
-  sectionTitle.style.marginTop = "100px";
-  sectionTitle.style.marginLeft = "93px";
-  templateBooks(dataFacts);
+  contenidoPrincipal.style.marginTop = "-10px";
+  sectionTitle.textContent = "FUN FACTS";
+  sectionTitle.style.marginTop = "90px";
+  sectionTitle.style.marginLeft = "33px";
+  spellsSection.style.display = "none";
+  potionsSection.style.display = "none";
+  templateFunFacts(dataFacts);
 });
 
 //GO BACK TO CHARACTERS
@@ -153,8 +167,125 @@ imgHeader.addEventListener("click", function (p) {
   imagenPrincipal.style.display = "block";
   imgHeader.style.display = "block";
   buttons.style.display = "block";
-  imgHeader.style.marginTop = "-595px";
-  navBarTexts.style.marginTop = "-595px";
-  contenidoPrincipal.style.marginTop = "435px";
-  sectionTitle.textContent = "PERSONAJES";
+  imgHeader.style.marginTop = "-433px";
+  imgHeader.style.marginLeft = "0px";
+  navBarTexts.style.marginTop = "-432px";
+  contenidoPrincipal.style.marginTop = "269px";
+  sectionTitle.textContent = "CHARACTERS";
+  sectionTitle.style.marginTop = "4px";
 });
+
+
+//CHANGE TO s.potions
+const imgPotions = "./img/potions.png"
+function templatePotions(cardPotions) {
+  let fragment = "";
+  cardPotions.forEach((element) => {
+    fragment += `
+<div class="cardsPotions">
+<p class="potionstName"><strong>${element.name}</strong> </p>
+<img src="${imgPotions}" class="potionsImg"/>
+<p class="potionsDescripcion">${element.description}</p>
+</div>
+`;
+  });
+  potionsSection.innerHTML = fragment;
+}
+templatePotions(dataPotions);
+
+potions.addEventListener("click", function (d) {
+  d.preventDefault(); // prevenir la acción por defecto del enlace
+  charactersSection.style.display = "none";
+  imagenPrincipal.style.display = "none";
+  potionsSection.style.display = "block";
+  imgHeader.style.display = "block";
+  buttons.style.display = "none";
+  imgHeader.style.marginTop = "0px";
+  imgHeader.style.marginLeft = "0px";
+  navBarTexts.style.marginTop = "0px";
+  funFactssection.style.display = "none";
+  btncalcular.style.display = "none";
+  sectionTitle.textContent = "POTIONS";
+  sectionTitle.style.marginTop = "90px";
+  sectionTitle.style.marginLeft = "26px";
+  contenidoPrincipal.style.marginTop = "-10px";
+  calculatedFunfact.style.display = "none";
+  booksSection.style.display = "none";
+  potionsBtnOrdenar.style.display = "block";
+  spellsSection.style.display = "none";
+  templatePotions(dataPotions);
+});
+
+//SORT BY - POTIONS
+potionsBtnOrdenar.addEventListener("change", function (x) {
+  if (x.target.value === "A-Z") {
+    const resultAZ = ordenarAlfabeticamente(dataPotions);
+    spellsSection.innerHTML = "";
+    templatePotions(resultAZ);
+  } else if (x.target.value === "Z-A") {
+    spellsSection.innerHTML = "";
+    const resultZA = ordenarAlfabeticamente(dataPotions).reverse();
+    templatePotions(resultZA);
+  } else if (x.target.value === "ordenar") {
+    spellsSection.innerHTML = "";
+    templatePotions(dataPotions);
+  }
+});
+
+//CHANGE TO s.Spells
+function templateSpells(cardSpells) {
+  let fragment = "";
+  cardSpells.forEach((element) => {
+    fragment += `
+<div class="cardsSpells">
+<p class="spellsName"><strong>${element.name}</strong> </p>
+<p class="spellsName">${element.spell_type} </p>
+<p class="spellsDescripcion">${element.pronunciation}</p>
+</div>
+`;
+  });
+  spellsSection.innerHTML = fragment;
+}
+templateSpells(dataSpells);
+
+spells.addEventListener("click", function (d) {
+  d.preventDefault(); // prevenir la acción por defecto del enlace
+  charactersSection.style.display = "none";
+  imagenPrincipal.style.display = "none";
+  spellsSection.style.display = "block";
+  imgHeader.style.display = "block";
+  buttons.style.display = "none";
+  imgHeader.style.marginTop = "0px";
+  imgHeader.style.marginLeft = "0px";
+  navBarTexts.style.marginTop = "0px";
+  funFactssection.style.display = "none";
+  btncalcular.style.display = "none";
+  sectionTitle.textContent = "SPELLS";
+  sectionTitle.style.marginTop = "80px";
+  sectionTitle.style.marginLeft = "26px";
+  contenidoPrincipal.style.marginTop = "-10px";
+  calculatedFunfact.style.display = "none";
+  booksSection.style.display = "none";
+  potionsSection.style.display = "none";
+  btnOrdenarSpells.style.display = "block";
+  potionsBtnOrdenar.style.display = "none";
+
+  templatePotions(dataPotions);
+});
+
+//SORT BY - SPELLS
+btnOrdenarSpells.addEventListener("change", function (x) {
+  if (x.target.value === "A-Z") {
+    const resultAZ = ordenarAlfabeticamente(dataSpells);
+    spellsSection.innerHTML = "";
+    templateSpells(resultAZ);
+  } else if (x.target.value === "Z-A") {
+    spellsSection.innerHTML = "";
+    const resultZA = ordenarAlfabeticamente(dataSpells).reverse();
+    templateSpells(resultZA);
+  } else if (x.target.value === "ordenar") {
+    spellsSection.innerHTML = "";
+    templateSpells(dataSpells);
+  }
+});
+

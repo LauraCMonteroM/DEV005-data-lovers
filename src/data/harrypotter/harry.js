@@ -558,7 +558,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "Ravenclaw (likely)",
+      "house": "Ravenclaw",
       "associated_groups": ["Belby family"],
       "books_featured_in": [6]
     },
@@ -734,7 +734,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "House of Black (disowned posthumously)",
+      "house": null,
       "associated_groups": [],
       "books_featured_in": [5]
     },
@@ -750,7 +750,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "House of Black",
+      "house": null,
       "associated_groups": [],
       "books_featured_in": [5]
     },
@@ -766,7 +766,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "House of Black",
+      "house": null,
       "associated_groups": [],
       "books_featured_in": [5]
     },
@@ -782,7 +782,7 @@ export default {
       "eye_color": "Dark, shrewd and narrow",
       "wand": null,
       "patronus": null,
-      "house": "Hogwarts School of Witchcraft and Wizardry",
+      "house": null,
       "associated_groups": [],
       "books_featured_in": [5, 6, 7]
     },
@@ -798,7 +798,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": "Non-corporeal",
-      "house": "House of Black",
+      "house": null,
       "associated_groups": [],
       "books_featured_in": [5, 6, 7]
     },
@@ -970,7 +970,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "Hufflepuff (likely)",
+      "house": "Hufflepuff",
       "associated_groups": ["Bones family"],
       "books_featured_in": [1]
     },
@@ -986,7 +986,7 @@ export default {
       "eye_color": "Grey",
       "wand": "Unknown length, wood and core",
       "patronus": null,
-      "house": "Hufflepuff (possibly)",
+      "house": "Hufflepuff",
       "associated_groups": ["Bones family", "Order of the Phoenix"],
       "books_featured_in": [1, 5]
     },
@@ -1120,7 +1120,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "Gryffindor (possibly)",
+      "house": "Gryffindor",
       "associated_groups": ["Brown family"],
       "books_featured_in": [3]
     },
@@ -1152,7 +1152,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "Riddle family (formerly)",
+      "house": null,
       "associated_groups": [],
       "books_featured_in": [4, 6]
     },
@@ -1416,7 +1416,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "Unknown",
+      "house": null,
       "associated_groups": [],
       "books_featured_in": [3]
     },
@@ -1480,7 +1480,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": "None",
-      "house": "Slytherin (likely)",
+      "house": "Slytherin",
       "associated_groups": ["Crabbe family", "Lord Voldemort", "Death Eaters"],
       "books_featured_in": [4, 5, 7]
     },
@@ -2639,7 +2639,7 @@ export default {
       "eye_color": "Brown",
       "wand": "Unknown length, wood and core",
       "patronus": "Non-corporeal",
-      "house": "Unknown",
+      "house": null,
       "associated_groups": [
         "Order of the Phoenix",
         "Albus Dumbledore",
@@ -2851,7 +2851,7 @@ export default {
       "eye_color": "Bright brown",
       "wand": null,
       "patronus": null,
-      "house": "House of Gaunt",
+      "house": null,
       "associated_groups": [],
       "books_featured_in": [2, 6, 7]
     },
@@ -2867,7 +2867,7 @@ export default {
       "eye_color": "Dark",
       "wand": "Unknown length, wood and core",
       "patronus": null,
-      "house": "House of Gaunt",
+      "house": null,
       "associated_groups": [],
       "books_featured_in": [6, 7]
     },
@@ -3059,7 +3059,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": "None",
-      "house": "Slytherin (possibly)",
+      "house": "Slytherin",
       "associated_groups": ["Goyle family", "Lord Voldemort", "Death Eaters"],
       "books_featured_in": [4]
     },
@@ -3635,7 +3635,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "House of Black",
+      "house":null,
       "associated_groups": [],
       "books_featured_in": [5]
     },
@@ -3699,7 +3699,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "Gryffindor (likely)",
+      "house": "Gryffindor",
       "associated_groups": ["Jordan family"],
       "books_featured_in": [4]
     },
@@ -3903,7 +3903,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "House of Black (formerly)",
+      "house": null,
       "associated_groups": [],
       "books_featured_in": [5, 6, 7]
     },
@@ -4042,7 +4042,7 @@ export default {
       "eye_color": "Dark",
       "wand": null,
       "patronus": "None",
-      "house": "Lord Voldemort",
+      "house": "Slytherin",
       "associated_groups": [],
       "books_featured_in": [4, 5, 7]
     },
@@ -4473,7 +4473,7 @@ export default {
       "eye_color": "Grey",
       "wand": "10\", Hawthorn, unicorn hair (formerly)",
       "patronus": "None",
-      "house": "Malfoy family",
+      "house": "Slytherin",
       "associated_groups": [],
       "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
     },
@@ -4489,7 +4489,7 @@ export default {
       "eye_color": "Grey",
       "wand": "Elm and dragon heartstring (formerly)",
       "patronus": "None",
-      "house": "Malfoy family",
+      "house": "Slytherin",
       "associated_groups": [],
       "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
     },
@@ -4505,7 +4505,7 @@ export default {
       "eye_color": "Grey",
       "wand": "Unknown length, wood and core",
       "patronus": null,
-      "house": "Malfoy family",
+      "house": "Slytherin",
       "associated_groups": [],
       "books_featured_in": [7]
     },
@@ -4656,7 +4656,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "Gryffindor (likely)",
+      "house": "Gryffindor",
       "associated_groups": ["Midgen family"],
       "books_featured_in": [6]
     },
@@ -4779,7 +4779,7 @@ export default {
       "eye_color": "One dark, one electric blue",
       "wand": "Unknown length, wood and core",
       "patronus": "Non-corporeal",
-      "house": "Unknown",
+      "house": null,
       "associated_groups": [
         "Order of the Phoenix",
         "Advance Guard",
@@ -6220,7 +6220,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": "None",
-      "house": "Slytherin (possibly)",
+      "house": "Slytherin",
       "associated_groups": ["Death Eaters", "Lord Voldemort", "British Ministry of Magic"],
       "books_featured_in": [7]
     },
@@ -7350,7 +7350,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "Arthur Weasley (paternal grandfather)",
+      "house": null,
       "associated_groups": ["Weasley family", "Granger family", "Prewett family", "Potter family"],
       "books_featured_in": [7]
     },
@@ -8001,7 +8001,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "House of Black",
+      "house": null,
       "associated_groups": [],
       "books_featured_in": [5]
     },
@@ -8017,7 +8017,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": "None",
-      "house": "House of Black",
+      "house": null,
       "associated_groups": [],
       "books_featured_in": [5, 7]
     },
@@ -8033,7 +8033,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "Hufflepuff (likely)",
+      "house": "Hufflepuff",
       "associated_groups": ["Bones family"],
       "books_featured_in": [1]
     },
@@ -8182,7 +8182,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "Gryffindor (possibly)",
+      "house": "Gryffindor",
       "associated_groups": ["Brown family"],
       "books_featured_in": [3]
     },
@@ -8380,7 +8380,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "Ravenclaw (possibly)",
+      "house": "Ravenclaw",
       "associated_groups": ["British Ministry of Magic", "Chang family"],
       "books_featured_in": [5]
     },
@@ -8969,7 +8969,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "Gryffindor (possibly)",
+      "house": "Gryffindor",
       "associated_groups": ["Finnigan family"],
       "books_featured_in": [1, 4, 5, 6]
     },
@@ -9177,7 +9177,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "Slytherin (most likely)",
+      "house": "Slytherin",
       "associated_groups": ["Death Eaters (most likely)"],
       "books_featured_in": [5]
     },
@@ -9723,7 +9723,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "House of Black",
+      "house": null,
       "associated_groups": [],
       "books_featured_in": [5]
     },
@@ -9771,7 +9771,7 @@ export default {
       "eye_color": null,
       "wand": "12¾\", Walnut, dragon heartstring",
       "patronus": "None",
-      "house": "House of Black",
+      "house": null,
       "associated_groups": [],
       "books_featured_in": [4, 5, 6, 7]
     },
@@ -9848,7 +9848,7 @@ export default {
       "eye_color": "Pale silvery (possibly)",
       "wand": null,
       "patronus": null,
-      "house": "Ravenclaw (possibly)",
+      "house": "Ravenclaw",
       "associated_groups": ["Lovegood family"],
       "books_featured_in": [5, 7]
     },
@@ -9976,7 +9976,7 @@ export default {
       "eye_color": "Blue",
       "wand": "Unknown 1st wand",
       "patronus": null,
-      "house": "House of Black",
+      "house": null,
       "associated_groups": [],
       "books_featured_in": [1, 4, 5, 6, 7]
     },
@@ -10292,7 +10292,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "Gryffindor, Hufflepuff, or Slytherin",
+      "house": "Gryffindor",
       "associated_groups": ["Moon family", "Hogwarts School of Witchcraft and Wizardry"],
       "books_featured_in": [1]
     },
@@ -10576,7 +10576,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "Gryffindor, Hufflepuff, or Slytherin",
+      "house": "Gryffindor",
       "associated_groups": ["Perks family", "Hogwarts School of Witchcraft and Wizardry"],
       "books_featured_in": [1]
     },
@@ -10803,7 +10803,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "Slytherin (possibly)",
+      "house": "Slytherin",
       "associated_groups": ["Prince family", "Snape family", "Hogwarts School of Witchcraft and Wizardry"],
       "books_featured_in": [5, 6, 7]
     },
@@ -10947,7 +10947,7 @@ export default {
       "eye_color": null,
       "wand": "Unknown length, wood and core",
       "patronus": null,
-      "house": "House of Gaunt (abandoned)",
+      "house": null,
       "associated_groups": [],
       "books_featured_in": [2, 4, 5, 6, 7]
     },
@@ -11075,7 +11075,7 @@ export default {
       "eye_color": "Yellow",
       "wand": null,
       "patronus": null,
-      "house": "Salazar Slytherin",
+      "house": "Slytherin",
       "associated_groups": [],
       "books_featured_in": [2, 3, 4, 5, 6, 7]
     },
@@ -11358,7 +11358,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "House of Black (formerly)",
+      "house": null,
       "associated_groups": [],
       "books_featured_in": [5, 7]
     },
@@ -11833,7 +11833,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "Septimus Weasley (paternal great-grandfather)",
+      "house": null,
       "associated_groups": ["Hogwarts School of Witchcraft and Wizardry", "Weasley family", "Delacour family", "Prewett family"],
       "books_featured_in": [7]
     },
@@ -11966,7 +11966,7 @@ export default {
       "eye_color": null,
       "wand": null,
       "patronus": null,
-      "house": "Slytherin (likely)",
+      "house": "Slytherin",
       "associated_groups": ["Zabini family"],
       "books_featured_in": [6]
     },
@@ -14513,8 +14513,7 @@ export default {
       "id": 223,
       "name": "Protego Maxima",
       "other_name": null,
-      "pronunciation": "pro-TAY-goh MAX-ee-Ma  \t<img src=\"https://vignette.wikia.nocookie.net/harrypotter/images/6/6b/TwoProtego.JPG/revision/latest/scale-to-width-down/210?cb=20110627134927\" \t alt=\"TwoProtego\"  \tclass=\"thumbimage \" \t \tdata-image-key=\"TwoProtego.JPG\" \tdata-image-name=\"TwoProtego.JPG\" \t \t width=\"210\"  \t height=\"89\"  \t \t \t \t>",
-      "spell_type": "Charm",
+      "pronunciation": "pro-TAY-goh MAX-ee-Ma",  
       "description": "A powerful shield charm against dark magic. A stronger and bigger version of Protego, especially when combined with other wizards casting it at the same time. Was so powerful that it could also disintegrate people that came too close and tried to enter it.",
       "mention": "Cast by Professor Flitwick, Professor McGonagall, Professor Slughorn and Mrs Weasley in an attempt to strengthen the castle's defences in the Battle of Hogwarts.",
       "etymology": "Latin Protego, \"I protect\"",
