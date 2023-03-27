@@ -567,7 +567,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 390px) and (max-width: 1365px) {
+@media screen and (min-width: 390px) and (max-width: 1365px {
   #header-img {
     position: fixed;
     margin-top: 0px;

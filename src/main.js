@@ -78,7 +78,8 @@ btncalcular.addEventListener("click", function () {
   const h3 = '<h3 class= "typeFunFact1">Did you know ...</h3>';
   const imgwomen = '<img src="./img/datocuriosomujeres.png" class="imgFact1">';
   calculatedFunfact.style.display = "block";
-  calculatedFunfact.innerHTML = h3 + imgwomen + "There are " + data + " female characters in this saga?";
+  calculatedFunfact.innerHTML =
+    h3 + imgwomen + "There are " + data + " female characters in this saga?";
 });
 
 //CHANGE TO s.LIBROS
@@ -98,6 +99,10 @@ templateBooks(dataBooks);
 
 books.addEventListener("click", function (e) {
   e.preventDefault(); // prevenir la acción por defecto del enlace
+  btnOrdenarSpells.style.display = "none";
+  calculatedFunfact.style.display = "none";
+  potionsSection.style.display = "none";
+  spellsSection.style.display = "none";
   charactersSection.style.display = "none";
   imagenPrincipal.style.display = "none";
   buttons.style.display = "none";
@@ -113,9 +118,7 @@ books.addEventListener("click", function (e) {
   sectionTitle.textContent = "BOOKS";
   sectionTitle.style.marginTop = "100px";
   sectionTitle.style.marginLeft = "93px";
-  calculatedFunfact.style.display = "none";
-  potionsSection.style.display = "none";
-  spellsSection.style.display = "none";
+
   templateBooks(dataBooks);
 });
 
@@ -142,10 +145,13 @@ facts.addEventListener("click", function (e) {
   booksSection.style.display = "none";
   buttons.style.display = "none";
   booksSection.style.display = "none";
+  potionsBtnOrdenar.style.display = "none";
+  calculatedFunfact.style.display = "none";
+  spellsSection.style.display = "none";
+  potionsSection.style.display = "none";
   funFactssection.style.display = "block";
   btncalcular.style.display = "block";
   imgHeader.style.display = "block";
-  calculatedFunfact.style.display = "none";
   imgHeader.style.marginTop = "0px";
   imgHeader.style.marginLeft = "0px";
   navBarTexts.style.marginTop = "0px";
@@ -153,8 +159,7 @@ facts.addEventListener("click", function (e) {
   sectionTitle.textContent = "FUN FACTS";
   sectionTitle.style.marginTop = "100px";
   sectionTitle.style.marginLeft = "93px";
-  spellsSection.style.display = "none";
-  potionsSection.style.display = "none";
+
   templateFunFacts(dataFacts);
 });
 
@@ -164,7 +169,7 @@ imgHeader.addEventListener("click", function (p) {
   btncalcular.style.display = "none";
   booksSection.style.display = "none";
   funFactssection.style.display = "none";
-  calculatedFunfact.style.display = "none"
+  calculatedFunfact.style.display = "none";
   charactersSection.style.display = "block";
   imagenPrincipal.style.display = "block";
   imgHeader.style.display = "block";
@@ -177,9 +182,8 @@ imgHeader.addEventListener("click", function (p) {
   sectionTitle.style.marginTop = "4px";
 });
 
-
 //CHANGE TO s.potions
-const imgPotions = "./img/potions.png"
+const imgPotions = "./img/potions.png";
 function templatePotions(cardPotions) {
   let fragment = "";
   cardPotions.forEach((element) => {
@@ -196,25 +200,28 @@ function templatePotions(cardPotions) {
 templatePotions(dataPotions);
 
 potions.addEventListener("click", function (d) {
-  d.preventDefault(); // prevenir la acción por defecto del enlace
+  d.preventDefault();
   charactersSection.style.display = "none";
+  btnOrdenarSpells.style.display = "none";
   imagenPrincipal.style.display = "none";
+  funFactssection.style.display = "none";
+  buttons.style.display = "none";
+  btncalcular.style.display = "none";
+  buttons.style.display = "none";
+  calculatedFunfact.style.display = "none";
+  booksSection.style.display = "none";
+  spellsSection.style.display = "none";
   potionsSection.style.display = "block";
   imgHeader.style.display = "block";
-  buttons.style.display = "none";
   imgHeader.style.marginTop = "0px";
   imgHeader.style.marginLeft = "0px";
   navBarTexts.style.marginTop = "0px";
-  funFactssection.style.display = "none";
-  btncalcular.style.display = "none";
   sectionTitle.textContent = "POTIONS";
   sectionTitle.style.marginTop = "90px";
   sectionTitle.style.marginLeft = "26px";
   contenidoPrincipal.style.marginTop = "-10px";
-  calculatedFunfact.style.display = "none";
-  booksSection.style.display = "none";
   potionsBtnOrdenar.style.display = "block";
-  spellsSection.style.display = "none";
+
   templatePotions(dataPotions);
 });
 
@@ -252,28 +259,28 @@ function templateSpells(cardSpells) {
 templateSpells(dataSpells);
 
 spells.addEventListener("click", function (d) {
-  d.preventDefault(); // prevenir la acción por defecto del enlace
+  d.preventDefault(); 
   charactersSection.style.display = "none";
   imagenPrincipal.style.display = "none";
+  funFactssection.style.display = "none";
+  calculatedFunfact.style.display = "none";
+  booksSection.style.display = "none";
+  potionsSection.style.display = "none";
+  btncalcular.style.display = "none";
+  potionsBtnOrdenar.style.display = "none";
+  buttons.style.display = "none";
   spellsSection.style.display = "block";
   imgHeader.style.display = "block";
-  buttons.style.display = "none";
   imgHeader.style.marginTop = "0px";
   imgHeader.style.marginLeft = "0px";
   navBarTexts.style.marginTop = "0px";
-  funFactssection.style.display = "none";
-  btncalcular.style.display = "none";
   sectionTitle.textContent = "SPELLS";
   sectionTitle.style.marginTop = "80px";
   sectionTitle.style.marginLeft = "26px";
   contenidoPrincipal.style.marginTop = "-10px";
-  calculatedFunfact.style.display = "none";
-  booksSection.style.display = "none";
-  potionsSection.style.display = "none";
   btnOrdenarSpells.style.display = "block";
-  potionsBtnOrdenar.style.display = "none";
 
-  templatePotions(dataPotions);
+  templatePotions(dataSpells);
 });
 
 //SORT BY - SPELLS
@@ -292,20 +299,17 @@ btnOrdenarSpells.addEventListener("change", function (x) {
   }
 });
 
-
-
-
 //HAMB MENU FOR PHONE
 const nav = document.getElementById("sections");
 const open = document.getElementById("open");
-const close = document.getElementById("close")
+const close = document.getElementById("close");
 
 open.addEventListener("click", () => {
   nav.style.display = "flex";
   open.style.display = "none";
-})
+});
 
-close.addEventListener("click",() =>{
-  nav.style.display = "none"
+close.addEventListener("click", () => {
+  nav.style.display = "none";
   open.style.display = "block";
-})
+});
